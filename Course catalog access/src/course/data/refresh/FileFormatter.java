@@ -112,6 +112,9 @@ public class FileFormatter {
                     deptCourseList.println("#"+counter+","+full[0]+"," + full[1].split("\\s+",2)[0]+","+full[1].split("\\s+",2)[1]+"," + full[2]+"," + full[3].toUpperCase()+","+findRating(full[1].split("\\s+")));
                     
             }
+            else if (full[1].contains("-")){
+                deptCourseList.println("#"+counter+","+full[0]+"," + full[1]+", "+","+ full[2]+"," + full[3].toUpperCase()+","+findRating(full[1].split("\\s+")));
+            }
             else
               deptCourseList.println("#"+counter+","+full[0]+"," + full[1]+"," + full[2]+"," + full[3].toUpperCase()+","+findRating(full[1].split("\\s+")));  
             counter++;
@@ -155,6 +158,9 @@ public class FileFormatter {
                 }
                 else
                 deptCourseList.println(full[0]+"," + full[1].split("\\s+",2)[0]+","+full[1].split("\\s+",2)[1]+"," + full[2]+"," + full[3].toUpperCase()+","+findRating(full[1].split("\\s+")));
+            }
+            else if (full[1].contains("-")){
+                deptCourseList.println(full[0]+"," + full[1]+", "+","+ full[2]+"," + full[3].toUpperCase()+","+findRating(full[1].split("\\s+")));
             }
              else
                 deptCourseList.println(full[0]+"," + full[1]+"," + full[2]+"," + full[3].toUpperCase()+","+findRating(full[1].split("\\s+")));
