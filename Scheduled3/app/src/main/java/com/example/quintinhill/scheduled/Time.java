@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package scheduledterminal;
+package com.example.quintinhill.scheduled;
 
 import java.io.*;
 

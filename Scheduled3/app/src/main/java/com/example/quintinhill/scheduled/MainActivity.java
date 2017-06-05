@@ -2,6 +2,7 @@ package com.example.quintinhill.scheduled;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,46 +15,28 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
-<<<<<<< HEAD
 import java.util.*;
 import java.io.*;
-=======
-import java.util.ArrayList;
-import java.util.Iterator;
->>>>>>> origin/master
 
 public class MainActivity extends AppCompatActivity {
     Spinner sp1,sp2,sp3;
     CheckBox priority;
     Boolean important = false;
-<<<<<<< HEAD
     String selectedClass, subjectID, subjectIDRatings;
-=======
-    String selectedClass;
->>>>>>> origin/master
     ArrayList<Pair<String,Boolean>> classes;//important, when finalized is pressed, this is the arra
                                             //y of classes and priorities
     ArrayAdapter<String> adp1,adp2,adp3;
     ArrayList<String> l1,l2;
     //double spinner to choose class
-<<<<<<< HEAD
     int classCount;
     int pos;
     int cc;
-=======
-    int pos;
-    int cc=0;
->>>>>>> origin/master
     int desired = 3;//this is the value of classes student wants to take
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-<<<<<<< HEAD
         cc=0;
-=======
-
->>>>>>> origin/master
 
         //DROP DOWN BOXES
 
@@ -62,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         l1=new ArrayList<String>();
         classes = new ArrayList<Pair<String,Boolean>>();
         l1.add("-Subject-");
-<<<<<<< HEAD
 
             /* Read the Subjects.txt file */
             /* code for reading from a txt file used from
@@ -91,14 +73,6 @@ public class MainActivity extends AppCompatActivity {
         }
                 /* end of reading the subjects */
 
-=======
-        /*while(reader.hasNext())) {
-            l1.add(reader.nextLine());
-        }*/
-        l1.add("ANTH");
-        l1.add("CMPSC");
-        l1.add("COMM");
->>>>>>> origin/master
         sp1= (Spinner) findViewById(R.id.spinner1);
         sp2= (Spinner) findViewById(R.id.spinner2);
 
@@ -118,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             private void add() {
-<<<<<<< HEAD
                 classCount = 0;
 
                 if (pos == 0) {
@@ -175,73 +148,6 @@ public class MainActivity extends AppCompatActivity {
                              select();
                          }
 
-=======
-                // TODO Auto-generated method stub
-
-                switch(pos)
-                {
-                    case 0:
-                        l2= new ArrayList<String>();
-                        /*while(reader.hasNext())) {
-                        l1.add(reader.nextLine());
-                        }*/
-                        l2.add("-Course-");
-
-                        adp2=new ArrayAdapter<String>(MainActivity.this,
-                                android.R.layout.simple_dropdown_item_1line,l2);
-                        adp2.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-                        sp2.setAdapter(adp2);
-
-                        break;
-                    case 1:
-                        l2= new ArrayList<String>();
-                        /*while(reader.hasNext())) {
-                        l1.add(reader.nextLine());
-                        }*/
-                        l2.add("ANTH3");
-                        l2.add("ANTH5");
-                        l2.add("ANTH9");
-                        l2.add("ANTH103");
-
-                        adp2=new ArrayAdapter<String>(MainActivity.this,
-                                android.R.layout.simple_dropdown_item_1line,l2);
-                        adp2.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-                        sp2.setAdapter(adp2);
-
-                        select();
-
-                        break;
-                    case 2:
-                        l2= new ArrayList<String>();
-                        l2.add("CMPSC8");
-                        l2.add("CMPSC16");
-                        l2.add("CMPSC24");
-                        l2.add("CMPSC32");
-
-                        adp2=new ArrayAdapter<String>(MainActivity.this,
-                                android.R.layout.simple_dropdown_item_1line,l2);
-                        adp2.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-                        sp2.setAdapter(adp2);
-
-                        select();
-
-                        break;
-                    case 3:
-                        l2= new ArrayList<String>();
-                        l2.add("COMM1");
-                        l2.add("COMM87");
-                        l2.add("COMM88");
-                        l2.add("COMM89");
-
-                        adp2=new ArrayAdapter<String>(MainActivity.this,
-                                android.R.layout.simple_dropdown_item_1line,l2);
-                        adp2.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-                        sp2.setAdapter(adp2);
-
-                        select();
-
-                        break;
->>>>>>> origin/master
                 }
 
             }
@@ -302,15 +208,9 @@ public class MainActivity extends AppCompatActivity {
         String Temp = sp3.getSelectedItem().toString();
         if(Temp=="3")
             desired =3;
-<<<<<<< HEAD
         else if(Temp=="4")
             desired = 4;
         else if (Temp == "5")
-=======
-        else if(Temp=="3")
-            desired = 4;
-        else
->>>>>>> origin/master
             desired = 5;
 
 
@@ -331,11 +231,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                 }
-<<<<<<< HEAD
                 if((!check)&&(selectedClass!="-Course-")&&classCount > 0&&(selectedClass!=null)) {
-=======
-                if((!check)&&(selectedClass!="-Course-")&&(selectedClass!=null)) {
->>>>>>> origin/master
                     Toast.makeText(getApplicationContext(), "Adding " + selectedClass, Toast.LENGTH_SHORT).show();
                     Pair<String,Boolean> current_set = new Pair(selectedClass, important);
                     //checkbox
@@ -345,19 +241,11 @@ public class MainActivity extends AppCompatActivity {
                     //text
                     TextView course = new TextView(getApplicationContext());
                     course.setText(selectedClass);
-<<<<<<< HEAD
                     //table
                     final TableLayout ll= (TableLayout) findViewById(R.id.table);
                     //delete button
                     Button delete = new Button(getApplicationContext());
                     delete.setText("X");
-=======
-                    //delete button
-                    Button delete = new Button(getApplicationContext());
-                    delete.setText("X");
-                    //table
-                    TableLayout ll= (TableLayout) findViewById(R.id.table);
->>>>>>> origin/master
                     //row
                     TableRow tr = new TableRow(getApplicationContext());
                     TableRow.LayoutParams lp = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT);
@@ -368,22 +256,20 @@ public class MainActivity extends AppCompatActivity {
                     tr.addView(priority);
                     tr.addView(delete);
                     ll.addView(tr);
-<<<<<<< HEAD
                     delete.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
                             final TableRow parent = (TableRow) v.getParent();
-                            String name = parent.getVirtualChildAt(1).toString();
+                            String name = ((TextView) parent.getVirtualChildAt(0)).getText().toString();
                             for(int a=0;a<classes.size();a++) {
-                                if (classes.get(a).getString() == name) {
+                                if (classes.get(a).getString().contains(name)) {
                                     classes.remove(a);
                                 }
+
                             }
                             ll.removeView(parent);
                         }
                     });
-=======
->>>>>>> origin/master
                     classes.add(current_set);
                     cc++;
                 }
@@ -402,7 +288,6 @@ public class MainActivity extends AppCompatActivity {
                     //BUTTON DOES NOT WORK
                     Toast.makeText(getApplicationContext(),"ADD MORE COURSES",Toast.LENGTH_SHORT).show();
                 //first calls addclass function for all the values in classes
-<<<<<<< HEAD
                 else {
                     Menu menu = new Menu();
                     for (int x=0; x<classes.size();x++) {
@@ -483,10 +368,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
-=======
-
-                //thenruns optimize functions
->>>>>>> origin/master
             }
         });
 
