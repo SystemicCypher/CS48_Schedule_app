@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher2.png",
+        "source": "/Users/Nick/Desktop/Scheduled5AM/app/src/main/res/mipmap-xxhdpi/ic_launcher2.png"
+    },
+    {
+        "merged": "/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher3.png",
+        "source": "/Users/Nick/Desktop/Scheduled5AM/app/src/main/res/mipmap-xxhdpi/ic_launcher3.png"
+    },
+    {
+        "merged": "/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher_round.png",
+        "source": "/Users/Nick/Desktop/Scheduled5AM/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher4.png",
+        "source": "/Users/Nick/Desktop/Scheduled5AM/app/src/main/res/mipmap-xxhdpi/ic_launcher4.png"
+    },
+    {
+        "merged": "/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/Users/Nick/Desktop/Scheduled5AM/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

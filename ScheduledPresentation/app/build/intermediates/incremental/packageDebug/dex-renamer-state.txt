@@ -1,0 +1,7 @@
+#Mon Jun 05 05:25:27 PDT 2017
+base.0=/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a8e65aeda0604dd95cb5fbe51674b117c647762e
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_21c1b5f1b1e7efa3d715bbc1c4fc15539896b725/classes.dex
+base.1=/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_21c1b5f1b1e7efa3d715bbc1c4fc15539896b725
+file.0=/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a8e65aeda0604dd95cb5fbe51674b117c647762e/classes.dex

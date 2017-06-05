@@ -1,0 +1,4 @@
+#Mon Jun 05 05:25:27 PDT 2017
+base.0=/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1
+renamed.0=classes.dex
+file.0=/Users/Nick/Desktop/Scheduled5AM/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex
