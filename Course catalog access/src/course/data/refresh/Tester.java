@@ -20,10 +20,10 @@ public class Tester {
         File departments = new File("dpt.data");
         Scanner read = new Scanner(departments);
         FileFormatter y = new FileFormatter();
-        while(read.hasNextLine()){
+        //while(read.hasNextLine()){
         
-        y.createRating(read.nextLine().replaceAll("\\s+|\\n+||\\t+", "").toLowerCase());
-        }
+        y.createRating("CMPSC"/*read.nextLine().replaceAll("\\s+|\\n+||\\t+", "").toLowerCase()*/);
+        //}
         
         
     }

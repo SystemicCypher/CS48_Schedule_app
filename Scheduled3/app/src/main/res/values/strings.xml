@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Scheduled</string>
+    <string-array name="Desired">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+
+</resources>
